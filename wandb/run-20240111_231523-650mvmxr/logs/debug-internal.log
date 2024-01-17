@@ -1,0 +1,219 @@
+2024-01-11 23:15:23,433 INFO    StreamThr :926945 [internal.py:wandb_internal():86] W&B internal server running at pid: 926945, started at: 2024-01-11 23:15:23.431635
+2024-01-11 23:15:23,438 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: status
+2024-01-11 23:15:23,442 INFO    WriterThread:926945 [datastore.py:open_for_write():85] open: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/run-650mvmxr.wandb
+2024-01-11 23:15:23,443 DEBUG   SenderThread:926945 [sender.py:send():382] send: header
+2024-01-11 23:15:23,499 DEBUG   SenderThread:926945 [sender.py:send():382] send: run
+2024-01-11 23:15:24,109 INFO    SenderThread:926945 [dir_watcher.py:__init__():211] watching files in: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files
+2024-01-11 23:15:24,109 INFO    SenderThread:926945 [sender.py:_start_run_threads():1136] run started: 650mvmxr with start time 1704975323.430907
+2024-01-11 23:15:24,133 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: check_version
+2024-01-11 23:15:24,134 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: check_version
+2024-01-11 23:15:24,249 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: run_start
+2024-01-11 23:15:24,293 DEBUG   HandlerThread:926945 [system_info.py:__init__():32] System info init
+2024-01-11 23:15:24,294 DEBUG   HandlerThread:926945 [system_info.py:__init__():47] System info init done
+2024-01-11 23:15:24,294 INFO    HandlerThread:926945 [system_monitor.py:start():194] Starting system monitor
+2024-01-11 23:15:24,295 INFO    SystemMonitor:926945 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-01-11 23:15:24,297 INFO    HandlerThread:926945 [system_monitor.py:probe():214] Collecting system info
+2024-01-11 23:15:24,297 INFO    SystemMonitor:926945 [interfaces.py:start():190] Started cpu monitoring
+2024-01-11 23:15:24,299 INFO    SystemMonitor:926945 [interfaces.py:start():190] Started disk monitoring
+2024-01-11 23:15:24,304 INFO    SystemMonitor:926945 [interfaces.py:start():190] Started gpu monitoring
+2024-01-11 23:15:24,306 INFO    SystemMonitor:926945 [interfaces.py:start():190] Started memory monitoring
+2024-01-11 23:15:24,310 INFO    SystemMonitor:926945 [interfaces.py:start():190] Started network monitoring
+2024-01-11 23:15:24,342 DEBUG   HandlerThread:926945 [system_info.py:probe():196] Probing system
+2024-01-11 23:15:24,352 DEBUG   HandlerThread:926945 [system_info.py:_probe_git():181] Probing git
+2024-01-11 23:15:24,376 DEBUG   HandlerThread:926945 [system_info.py:_probe_git():189] Probing git done
+2024-01-11 23:15:24,377 DEBUG   HandlerThread:926945 [system_info.py:probe():244] Probing system done
+2024-01-11 23:15:24,377 DEBUG   HandlerThread:926945 [system_monitor.py:probe():223] {'os': 'Linux-6.2.0-39-generic-x86_64-with-glibc2.17', 'python': '3.8.18', 'heartbeatAt': '2024-01-11T12:15:24.342264', 'startedAt': '2024-01-11T12:15:23.418748', 'docker': None, 'cuda': None, 'args': ('--model_name_or_path', '/home/dexter/zhy/llama-2-7b-chat-hf', '--bf16', 'True', '--output_dir', '/home/dexter/zhy/output', '--model_max_length', '256', '--use_flash_attn', 'False', '--data_path', '/home/dexter/zhy/LongAlpaca-12k/LongAlpaca-12k.json', '--low_rank_training', 'True', '--num_train_epochs', '3', '--per_device_train_batch_size', '1', '--per_device_eval_batch_size', '2', '--gradient_accumulation_steps', '1', '--evaluation_strategy', 'no', '--save_strategy', 'steps', '--save_steps', '1000', '--save_total_limit', '2', '--learning_rate', '2e-5', '--weight_decay', '0.0', '--warmup_steps', '20', '--lr_scheduler_type', 'constant_with_warmup', '--logging_steps', '1', '--deepspeed', 'ds_configs/stage2.json', '--tf32', 'True'), 'state': 'running', 'program': 'supervised-fine-tune.py', 'codePathLocal': 'supervised-fine-tune.py', 'codePath': 'supervised-fine-tune.py', 'git': {'remote': 'https://github.com/Dexter-GT-86/LongLoRA.git', 'commit': '34c59333725b84b8946cf32f1a2fa083ff63eab1'}, 'email': None, 'root': '/home/dexter/zhy/LongLoRA-noflashattention', 'host': 'mu00153612L', 'username': 'dexter', 'executable': '/home/dexter/miniconda3/envs/longloraenv/bin/python', 'cpu_count': 24, 'cpu_count_logical': 48, 'cpu_freq': {'current': 1782.279875, 'min': 800.0, 'max': 3300.0}, 'cpu_freq_per_core': [{'current': 800.012, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 1140.531, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.114, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2916.291, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2916.18, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.005, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.021, 'min': 800.0, 'max': 3300.0}, {'current': 799.246, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.02, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.204, 'min': 800.0, 'max': 3300.0}, {'current': 800.292, 'min': 800.0, 'max': 3300.0}, {'current': 800.651, 'min': 800.0, 'max': 3300.0}, {'current': 800.052, 'min': 800.0, 'max': 3300.0}, {'current': 800.204, 'min': 800.0, 'max': 3300.0}, {'current': 800.036, 'min': 800.0, 'max': 3300.0}, {'current': 1020.289, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.032, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.006, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 800.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}, {'current': 2100.0, 'min': 800.0, 'max': 3300.0}], 'disk': {'/': {'total': 218.50913619995117, 'used': 198.02496337890625}}, 'gpu': 'NVIDIA GeForce RTX 3090', 'gpu_count': 4, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}, {'name': 'NVIDIA GeForce RTX 3090', 'memory_total': 25769803776}], 'memory': {'total': 125.51727294921875}}
+2024-01-11 23:15:24,377 INFO    HandlerThread:926945 [system_monitor.py:probe():224] Finished collecting system info
+2024-01-11 23:15:24,377 INFO    HandlerThread:926945 [system_monitor.py:probe():227] Publishing system info
+2024-01-11 23:15:24,377 DEBUG   HandlerThread:926945 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2024-01-11 23:15:24,378 DEBUG   HandlerThread:926945 [system_info.py:_save_pip():68] Saving pip packages done
+2024-01-11 23:15:24,378 DEBUG   HandlerThread:926945 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2024-01-11 23:15:25,114 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/requirements.txt
+2024-01-11 23:15:25,115 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/conda-environment.yaml
+2024-01-11 23:15:27,563 DEBUG   HandlerThread:926945 [system_info.py:_save_conda():87] Saving conda packages done
+2024-01-11 23:15:27,565 INFO    HandlerThread:926945 [system_monitor.py:probe():229] Finished publishing system info
+2024-01-11 23:15:27,571 DEBUG   SenderThread:926945 [sender.py:send():382] send: files
+2024-01-11 23:15:27,571 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-metadata.json with policy now
+2024-01-11 23:15:27,582 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: stop_status
+2024-01-11 23:15:27,583 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: stop_status
+2024-01-11 23:15:27,588 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-11 23:15:27,906 DEBUG   SenderThread:926945 [sender.py:send():382] send: telemetry
+2024-01-11 23:15:27,907 DEBUG   SenderThread:926945 [sender.py:send():382] send: config
+2024-01-11 23:15:27,909 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:27,909 DEBUG   SenderThread:926945 [sender.py:send():382] send: telemetry
+2024-01-11 23:15:27,909 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:27,909 WARNING SenderThread:926945 [sender.py:send_metric():1343] Seen metric with glob (shouldn't happen)
+2024-01-11 23:15:27,909 DEBUG   SenderThread:926945 [sender.py:send():382] send: telemetry
+2024-01-11 23:15:28,112 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/conda-environment.yaml
+2024-01-11 23:15:28,112 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log
+2024-01-11 23:15:28,113 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-metadata.json
+2024-01-11 23:15:28,395 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-11 23:15:28,400 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:28,400 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:28,400 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:28,401 DEBUG   SenderThread:926945 [sender.py:send():382] send: history
+2024-01-11 23:15:28,401 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: summary_record
+2024-01-11 23:15:28,406 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:28,518 INFO    wandb-upload_0:926945 [upload_job.py:push():131] Uploaded file /tmp/tmphbv2xruhwandb/d3p8dk5a-wandb-metadata.json
+2024-01-11 23:15:28,747 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: status_report
+2024-01-11 23:15:28,756 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-11 23:15:28,758 DEBUG   SenderThread:926945 [sender.py:send():382] send: history
+2024-01-11 23:15:28,758 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: summary_record
+2024-01-11 23:15:28,759 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:29,095 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-11 23:15:29,099 DEBUG   SenderThread:926945 [sender.py:send():382] send: history
+2024-01-11 23:15:29,100 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: summary_record
+2024-01-11 23:15:29,100 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: partial_history
+2024-01-11 23:15:29,106 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: metric
+2024-01-11 23:15:29,107 DEBUG   SenderThread:926945 [sender.py:send():382] send: history
+2024-01-11 23:15:29,108 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: summary_record
+2024-01-11 23:15:29,109 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:29,112 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_created():271] file/dir created: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-summary.json
+2024-01-11 23:15:30,113 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log
+2024-01-11 23:15:31,113 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log
+2024-01-11 23:15:34,110 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: status_report
+2024-01-11 23:15:37,568 DEBUG   SenderThread:926945 [sender.py:send():382] send: exit
+2024-01-11 23:15:37,568 INFO    SenderThread:926945 [sender.py:send_exit():589] handling exit code: 0
+2024-01-11 23:15:37,568 INFO    SenderThread:926945 [sender.py:send_exit():591] handling runtime: 13
+2024-01-11 23:15:37,572 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:37,573 INFO    SenderThread:926945 [sender.py:send_exit():597] send defer
+2024-01-11 23:15:37,573 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,573 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 0
+2024-01-11 23:15:37,574 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,574 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 0
+2024-01-11 23:15:37,574 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 1
+2024-01-11 23:15:37,575 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,575 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 1
+2024-01-11 23:15:37,575 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,575 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 1
+2024-01-11 23:15:37,576 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 2
+2024-01-11 23:15:37,576 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,576 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 2
+2024-01-11 23:15:37,576 INFO    HandlerThread:926945 [system_monitor.py:finish():203] Stopping system monitor
+2024-01-11 23:15:37,577 INFO    HandlerThread:926945 [interfaces.py:finish():202] Joined cpu monitor
+2024-01-11 23:15:37,579 INFO    HandlerThread:926945 [interfaces.py:finish():202] Joined disk monitor
+2024-01-11 23:15:37,579 DEBUG   SystemMonitor:926945 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-01-11 23:15:37,579 DEBUG   SystemMonitor:926945 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-01-11 23:15:37,579 DEBUG   SystemMonitor:926945 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-01-11 23:15:37,842 INFO    HandlerThread:926945 [interfaces.py:finish():202] Joined gpu monitor
+2024-01-11 23:15:37,843 INFO    HandlerThread:926945 [interfaces.py:finish():202] Joined memory monitor
+2024-01-11 23:15:37,843 INFO    HandlerThread:926945 [interfaces.py:finish():202] Joined network monitor
+2024-01-11 23:15:37,844 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,845 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 2
+2024-01-11 23:15:37,845 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 3
+2024-01-11 23:15:37,845 DEBUG   SenderThread:926945 [sender.py:send():382] send: stats
+2024-01-11 23:15:37,846 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,846 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 3
+2024-01-11 23:15:37,847 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,847 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 3
+2024-01-11 23:15:37,847 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 4
+2024-01-11 23:15:37,847 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,847 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 4
+2024-01-11 23:15:37,848 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,848 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 4
+2024-01-11 23:15:37,848 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 5
+2024-01-11 23:15:37,848 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,848 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 5
+2024-01-11 23:15:37,849 DEBUG   SenderThread:926945 [sender.py:send():382] send: summary
+2024-01-11 23:15:37,849 INFO    SenderThread:926945 [sender.py:_save_file():1392] saving file wandb-summary.json with policy end
+2024-01-11 23:15:37,850 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,850 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 5
+2024-01-11 23:15:37,850 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 6
+2024-01-11 23:15:37,850 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:37,851 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 6
+2024-01-11 23:15:37,851 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:37,851 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 6
+2024-01-11 23:15:37,856 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: status_report
+2024-01-11 23:15:38,147 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-summary.json
+2024-01-11 23:15:38,167 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 7
+2024-01-11 23:15:38,167 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:38,167 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 7
+2024-01-11 23:15:38,168 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:38,168 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 7
+2024-01-11 23:15:38,568 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-11 23:15:39,137 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/config.yaml
+2024-01-11 23:15:40,429 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 8
+2024-01-11 23:15:40,429 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: poll_exit
+2024-01-11 23:15:40,430 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:40,430 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 8
+2024-01-11 23:15:40,431 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:40,431 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 8
+2024-01-11 23:15:40,431 INFO    SenderThread:926945 [job_builder.py:build():298] Attempting to build job artifact
+2024-01-11 23:15:40,435 INFO    SenderThread:926945 [job_builder.py:_get_source_type():428] is repo sourced job
+2024-01-11 23:15:40,487 INFO    SenderThread:926945 [job_builder.py:build():404] adding wandb-job metadata file
+2024-01-11 23:15:40,497 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 9
+2024-01-11 23:15:40,497 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:40,497 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 9
+2024-01-11 23:15:40,498 DEBUG   SenderThread:926945 [sender.py:send():382] send: artifact
+2024-01-11 23:15:41,139 INFO    Thread-12 :926945 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log
+2024-01-11 23:15:41,627 INFO    SenderThread:926945 [sender.py:send_artifact():1470] sent artifact job-https___github.com_Dexter-GT-86_LongLoRA.git_supervised-fine-tune.py - {'id': 'QXJ0aWZhY3Q6Njg3OTUzMTMx', 'state': 'COMMITTED', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjEyODEyMDU5Mw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6Njg4MTAxNjU4', 'versionIndex': 3}}}
+2024-01-11 23:15:41,627 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:41,627 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 9
+2024-01-11 23:15:41,627 INFO    SenderThread:926945 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-01-11 23:15:42,141 INFO    SenderThread:926945 [dir_watcher.py:finish():388] scan: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files
+2024-01-11 23:15:42,141 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/config.yaml config.yaml
+2024-01-11 23:15:42,142 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-summary.json wandb-summary.json
+2024-01-11 23:15:42,142 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-metadata.json wandb-metadata.json
+2024-01-11 23:15:42,142 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/conda-environment.yaml conda-environment.yaml
+2024-01-11 23:15:42,142 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/requirements.txt requirements.txt
+2024-01-11 23:15:42,143 INFO    SenderThread:926945 [dir_watcher.py:finish():402] scan save: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log output.log
+2024-01-11 23:15:42,143 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 10
+2024-01-11 23:15:42,143 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:42,143 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 10
+2024-01-11 23:15:42,145 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:42,145 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 10
+2024-01-11 23:15:42,145 INFO    SenderThread:926945 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-11 23:15:42,704 INFO    wandb-upload_1:926945 [upload_job.py:push():131] Uploaded file /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/config.yaml
+2024-01-11 23:15:42,889 INFO    wandb-upload_2:926945 [upload_job.py:push():131] Uploaded file /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/wandb-summary.json
+2024-01-11 23:15:43,140 INFO    wandb-upload_0:926945 [upload_job.py:push():131] Uploaded file /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/requirements.txt
+2024-01-11 23:15:43,153 INFO    wandb-upload_4:926945 [upload_job.py:push():131] Uploaded file /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/output.log
+2024-01-11 23:15:43,158 INFO    wandb-upload_3:926945 [upload_job.py:push():131] Uploaded file /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/files/conda-environment.yaml
+2024-01-11 23:15:43,359 INFO    Thread-11 :926945 [sender.py:transition_state():617] send defer: 11
+2024-01-11 23:15:43,359 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:43,359 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 11
+2024-01-11 23:15:43,360 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:43,360 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 11
+2024-01-11 23:15:43,361 INFO    SenderThread:926945 [file_pusher.py:join():181] waiting for file pusher
+2024-01-11 23:15:43,361 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 12
+2024-01-11 23:15:43,361 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:43,361 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 12
+2024-01-11 23:15:43,362 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:43,362 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 12
+2024-01-11 23:15:43,362 INFO    SenderThread:926945 [file_stream.py:finish():595] file stream finish called
+2024-01-11 23:15:43,570 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: keepalive
+2024-01-11 23:15:43,574 INFO    SenderThread:926945 [file_stream.py:finish():599] file stream finish is done
+2024-01-11 23:15:43,574 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 13
+2024-01-11 23:15:43,574 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:43,574 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 13
+2024-01-11 23:15:43,575 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:43,575 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 13
+2024-01-11 23:15:43,575 INFO    SenderThread:926945 [sender.py:transition_state():617] send defer: 14
+2024-01-11 23:15:43,576 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: defer
+2024-01-11 23:15:43,576 INFO    HandlerThread:926945 [handler.py:handle_request_defer():172] handle defer: 14
+2024-01-11 23:15:43,577 DEBUG   SenderThread:926945 [sender.py:send():382] send: final
+2024-01-11 23:15:43,577 DEBUG   SenderThread:926945 [sender.py:send():382] send: footer
+2024-01-11 23:15:43,577 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: defer
+2024-01-11 23:15:43,577 INFO    SenderThread:926945 [sender.py:send_request_defer():613] handle sender defer: 14
+2024-01-11 23:15:43,579 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: poll_exit
+2024-01-11 23:15:43,580 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: server_info
+2024-01-11 23:15:43,580 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: poll_exit
+2024-01-11 23:15:43,581 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: server_info
+2024-01-11 23:15:43,586 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: get_summary
+2024-01-11 23:15:43,588 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: sampled_history
+2024-01-11 23:15:43,589 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: internal_messages
+2024-01-11 23:15:43,590 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: job_info
+2024-01-11 23:15:43,789 DEBUG   SenderThread:926945 [sender.py:send_request():409] send_request: job_info
+2024-01-11 23:15:43,790 INFO    MainThread:926945 [wandb_run.py:_footer_history_summary_info():3837] rendering history
+2024-01-11 23:15:43,791 INFO    MainThread:926945 [wandb_run.py:_footer_history_summary_info():3869] rendering summary
+2024-01-11 23:15:43,792 INFO    MainThread:926945 [wandb_run.py:_footer_sync_info():3796] logging synced files
+2024-01-11 23:15:43,792 DEBUG   HandlerThread:926945 [handler.py:handle_request():146] handle_request: shutdown
+2024-01-11 23:15:43,793 INFO    HandlerThread:926945 [handler.py:finish():866] shutting down handler
+2024-01-11 23:15:44,591 INFO    WriterThread:926945 [datastore.py:close():294] close: /home/dexter/zhy/LongLoRA-noflashattention/wandb/run-20240111_231523-650mvmxr/run-650mvmxr.wandb
+2024-01-11 23:15:44,790 INFO    SenderThread:926945 [sender.py:finish():1548] shutting down sender
+2024-01-11 23:15:44,790 INFO    SenderThread:926945 [file_pusher.py:finish():175] shutting down file pusher
+2024-01-11 23:15:44,790 INFO    SenderThread:926945 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,9 @@
+  0%|                                                                                                                                                                                                                                                     | 0/3 [00:00<?, ?it/s]/home/dexter/miniconda3/envs/longloraenv/lib/python3.8/site-packages/torch/utils/checkpoint.py:429: UserWarning: torch.utils.checkpoint: please pass in use_reentrant=True or use_reentrant=False explicitly. The default value of use_reentrant will be updated to be False in the future. To maintain current behavior, pass use_reentrant=True. It is recommended that you use use_reentrant=False. Refer to docs for more details on the differences between the two variants.
+  warnings.warn(
+/home/dexter/miniconda3/envs/longloraenv/lib/python3.8/site-packages/deepspeed/runtime/zero/stage_1_and_2.py:1652: UserWarning: The torch.cuda.*DtypeTensor constructors are no longer recommended. It's best to use methods such as torch.tensor(data, dtype=*, device='cuda') to create tensors. (Triggered internally at ../torch/csrc/tensor/python_tensor.cpp:83.)
+  total_norm_cuda = get_accelerator().FloatTensor([float(total_norm)])
+100%|█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| 3/3 [00:01<00:00,  2.00it/s]
+{'loss': 0.0, 'learning_rate': 1.0000000000000002e-06, 'epoch': 1.0}
+{'loss': 0.0, 'learning_rate': 2.0000000000000003e-06, 'epoch': 2.0}
+{'loss': 0.0, 'learning_rate': 3e-06, 'epoch': 3.0}
+{'train_runtime': 7.3521, 'train_samples_per_second': 0.408, 'train_steps_per_second': 0.408, 'train_loss': 0.0, 'epoch': 3.0}

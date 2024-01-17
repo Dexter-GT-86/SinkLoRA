@@ -1,0 +1,345 @@
+{
+    "os": "Linux-6.2.0-39-generic-x86_64-with-glibc2.17",
+    "python": "3.8.18",
+    "heartbeatAt": "2024-01-11T12:15:24.342264",
+    "startedAt": "2024-01-11T12:15:23.418748",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--model_name_or_path",
+        "/home/dexter/zhy/llama-2-7b-chat-hf",
+        "--bf16",
+        "True",
+        "--output_dir",
+        "/home/dexter/zhy/output",
+        "--model_max_length",
+        "256",
+        "--use_flash_attn",
+        "False",
+        "--data_path",
+        "/home/dexter/zhy/LongAlpaca-12k/LongAlpaca-12k.json",
+        "--low_rank_training",
+        "True",
+        "--num_train_epochs",
+        "3",
+        "--per_device_train_batch_size",
+        "1",
+        "--per_device_eval_batch_size",
+        "2",
+        "--gradient_accumulation_steps",
+        "1",
+        "--evaluation_strategy",
+        "no",
+        "--save_strategy",
+        "steps",
+        "--save_steps",
+        "1000",
+        "--save_total_limit",
+        "2",
+        "--learning_rate",
+        "2e-5",
+        "--weight_decay",
+        "0.0",
+        "--warmup_steps",
+        "20",
+        "--lr_scheduler_type",
+        "constant_with_warmup",
+        "--logging_steps",
+        "1",
+        "--deepspeed",
+        "ds_configs/stage2.json",
+        "--tf32",
+        "True"
+    ],
+    "state": "running",
+    "program": "supervised-fine-tune.py",
+    "codePathLocal": "supervised-fine-tune.py",
+    "codePath": "supervised-fine-tune.py",
+    "git": {
+        "remote": "https://github.com/Dexter-GT-86/LongLoRA.git",
+        "commit": "34c59333725b84b8946cf32f1a2fa083ff63eab1"
+    },
+    "email": null,
+    "root": "/home/dexter/zhy/LongLoRA-noflashattention",
+    "host": "mu00153612L",
+    "username": "dexter",
+    "executable": "/home/dexter/miniconda3/envs/longloraenv/bin/python",
+    "cpu_count": 24,
+    "cpu_count_logical": 48,
+    "cpu_freq": {
+        "current": 1782.279875,
+        "min": 800.0,
+        "max": 3300.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 800.012,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1140.531,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.114,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2916.291,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2916.18,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.005,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.021,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 799.246,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.02,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.204,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.292,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.651,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.052,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.204,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.036,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 1020.289,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.032,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.006,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 800.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        },
+        {
+            "current": 2100.0,
+            "min": 800.0,
+            "max": 3300.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 218.50913619995117,
+            "used": 198.02496337890625
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3090",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        },
+        {
+            "name": "NVIDIA GeForce RTX 3090",
+            "memory_total": 25769803776
+        }
+    ],
+    "memory": {
+        "total": 125.51727294921875
+    }
+}
