@@ -2,7 +2,8 @@
 <img src="imgs/LongAlpaca.png" alt="Stanford-Alpaca" style="width: 100%; min-width: 300px; display: block; margin: auto;">
 </p>
 
-# LongLoRA and LongAlpaca for Long-context LLMs
+# SinkLoRA
+
 
 
 [![Gradio](https://img.shields.io/badge/Gradio-Online%20Demo-green)](https://9c75b57d724f18f0f0.gradio.live)
