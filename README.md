@@ -1,6 +1,4 @@
-<p align="center" width="100%">
-<img src="imgs/LongAlpaca.png" alt="Stanford-Alpaca" style="width: 100%; min-width: 300px; display: block; margin: auto;">
-</p>
+
 
 # SinkLoRA
 
